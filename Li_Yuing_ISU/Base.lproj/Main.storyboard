@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mVw-1N-NhI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uPU-g5-JmJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="5PL-yp-od0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="BYZ-38-t0r" id="RGu-5B-FPg"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="135" id="QJ5-g0-voM" customClass="TableCell" customModule="Li_Yuing_ISU" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QJ5-g0-voM" id="cnB-dq-1hb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word:                                                  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE8-d3-l9F">
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.059605572920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meaning:                                                             " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-fQ-CEU">
+                                                    <rect key="frame" x="11" y="23" width="353" height="101"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeN-L2-bSY">
+                                                    <rect key="frame" x="264" y="23" width="99" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                                    <state key="normal" title="Main Menu">
+                                                        <color key="titleColor" red="0.86456350579350305" green="0.45355398715546869" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="QmP-G2-Vv8" kind="unwind" unwindAction="unwindFor:" id="qO5-NW-gS4"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="meaningLbl" destination="qhI-fQ-CEU" id="1e5-wz-cOR"/>
+                                            <outlet property="wordLbl" destination="DE8-d3-l9F" id="9DH-IR-tTW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ClC-EH-n3j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eL5-ZG-Mcv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uPU-g5-JmJ" secondAttribute="bottom" id="0Uc-tZ-niA"/>
+                            <constraint firstItem="uPU-g5-JmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D3D-dQ-1JS"/>
+                            <constraint firstItem="uPU-g5-JmJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eAJ-zc-sZF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uPU-g5-JmJ" secondAttribute="trailing" id="taw-S7-hJh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="5PL-yp-od0" id="QgP-0q-hOo"/>
+                        <outlet property="tabel" destination="uPU-g5-JmJ" id="LSY-cw-941"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="QmP-G2-Vv8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="-126.38680659670166"/>
+        </scene>
+        <!--Note View Controller-->
+        <scene sceneID="s6m-N8-E2t">
+            <objects>
+                <viewController id="CvV-Vg-zJu" customClass="noteViewController" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmY-gg-pv8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L07-ri-XtW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L07-ri-XtW" firstAttribute="leading" secondItem="emQ-M6-FfO" secondAttribute="leading" id="2Pt-PR-zvJ"/>
+                            <constraint firstItem="L07-ri-XtW" firstAttribute="top" secondItem="emQ-M6-FfO" secondAttribute="top" id="7ho-zM-ivI"/>
+                            <constraint firstItem="L07-ri-XtW" firstAttribute="bottom" secondItem="emQ-M6-FfO" secondAttribute="bottom" id="9xe-6w-x2E"/>
+                            <constraint firstItem="L07-ri-XtW" firstAttribute="trailing" secondItem="emQ-M6-FfO" secondAttribute="trailing" id="A6u-hQ-9Ia"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="emQ-M6-FfO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2bk-Kd-UpJ">
+                        <barButtonItem key="leftBarButtonItem" title="Main Menu" id="Df6-zd-LDU">
+                            <connections>
+                                <segue destination="tq4-Go-FNC" kind="unwind" unwindAction="unwindFor:" id="lc6-id-MoQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="te2-lY-DDx">
+                            <connections>
+                                <segue destination="AUJ-P6-Rkd" kind="show" id="00l-EF-mmn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="L07-ri-XtW" id="AN5-dz-V72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sW8-kR-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tq4-Go-FNC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="549.17541229385313"/>
+        </scene>
+        <!--Add Controller-->
+        <scene sceneID="ZIb-pI-08M">
+            <objects>
+                <viewController id="AUJ-P6-Rkd" customClass="AddController" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Vk-GH-Ujs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-Xm-2J3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Todo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-5M-kD0">
+                                <rect key="frame" x="28" y="125" width="309" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwU-zv-kTz">
+                                <rect key="frame" x="28" y="238" width="309" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.1782451769" blue="0.13012802670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButton:" destination="AUJ-P6-Rkd" eventType="touchUpInside" id="GCK-2u-8RL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="PQs-LD-Jtm"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="SwU-zv-kTz" id="IcA-wF-sEM"/>
+                        <outlet property="textField" destination="2Hg-5M-kD0" id="9Vg-5b-hVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLg-3P-t6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3532" y="548.27586206896558"/>
+        </scene>
+        <!--Goal-->
+        <scene sceneID="PYF-nC-SO3">
+            <objects>
+                <viewController id="mN5-xo-pLl" customClass="goal" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dy0-qK-7SP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background5" translatesAutoresizingMaskIntoConstraints="NO" id="4eY-sG-reu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSS-Vi-xye">
+                                <rect key="frame" x="30" y="20" width="116" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="46"/>
+                                <color key="textColor" red="1" green="0.10645951245860741" blue="0.26366582583719556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categrary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-Gf-FK3">
+                                <rect key="frame" x="9" y="200" width="224" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="46"/>
+                                <color key="textColor" red="0.87648544994558186" green="0.95918195218779467" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Goal:                                " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FI-RT-Vb7">
+                                <rect key="frame" x="26" y="130" width="315" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                <color key="textColor" red="0.81687283460000004" green="0.23576324709999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Categrary:                                " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48I-yE-ma5">
+                                <rect key="frame" x="10" y="333" width="343" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.51042299930470603" blue="0.37589008079534947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbz-cr-ilt">
+                                <rect key="frame" x="148" y="83" width="79" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="1500">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2:" destination="mN5-xo-pLl" eventType="touchUpInside" id="3RJ-Pz-TzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDy-ho-pw6">
+                                <rect key="frame" x="268" y="83" width="67" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="2000">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3:" destination="mN5-xo-pLl" eventType="touchUpInside" id="iaP-YT-w4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2R-fD-Ydg">
+                                <rect key="frame" x="16" y="276" width="78" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                <state key="normal" title="IELTS">
+                                    <color key="titleColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button4:" destination="mN5-xo-pLl" eventType="touchUpInside" id="Hde-aR-Ngz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2K-zQ-dAr">
+                                <rect key="frame" x="141" y="274" width="93" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                <state key="normal" title="CET-4">
+                                    <color key="titleColor" red="0.2297414944743581" green="0.61248770113708995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button5:" destination="mN5-xo-pLl" eventType="touchUpInside" id="dvE-IC-get"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXu-Ba-NfX">
+                                <rect key="frame" x="268" y="274" width="74" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                <state key="normal" title="CET-6">
+                                    <color key="titleColor" red="1" green="0.24338298832922056" blue="0.7221798171437106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button6:" destination="mN5-xo-pLl" eventType="touchUpInside" id="0AY-aB-CrT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGr-AU-SWY">
+                                <rect key="frame" x="28" y="83" width="79" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="21"/>
+                                <state key="normal" title="1000">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1:" destination="mN5-xo-pLl" eventType="touchUpInside" id="hsr-WN-h8r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Process" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioX-ZI-cuQ">
+                                <rect key="frame" x="7" y="394" width="334" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="44"/>
+                                <color key="textColor" red="1" green="0.016331670664808451" blue="0.48666579374919339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Motto:                                                            " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vws-OI-A0t">
+                                <rect key="frame" x="16" y="502" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="0.37458483881478211" green="1" blue="0.47666032389509816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yD-An-yQi">
+                                <rect key="frame" x="132" y="611" width="103" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.78913715490566327" blue="0.80504588087384032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Result">
+                                    <color key="titleColor" red="0.011756082635964837" green="0.18254456212813941" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="result:" destination="mN5-xo-pLl" eventType="touchUpInside" id="hTi-HX-NUF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Previous Goal:                         " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aV-hI-RsU">
+                                <rect key="frame" x="16" y="554" width="313" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" red="0.95977102105541467" green="1" blue="0.75534634952920854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-iu-PGg">
+                                <rect key="frame" x="260" y="623" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="mN5-xo-pLl" eventType="touchUpInside" id="FnX-DK-XCI"/>
+                                    <segue destination="mVw-1N-NhI" kind="show" identifier="back" id="8xT-Rz-APX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 VS 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKL-1j-3li">
+                                <rect key="frame" x="30" y="453" width="319" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                <color key="textColor" red="0.85025959666465301" green="1" blue="0.071403514873149443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96433566699333384" blue="0.87746090852057268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4eY-sG-reu" firstAttribute="trailing" secondItem="zAN-rq-E5Q" secondAttribute="trailing" id="1fX-Qq-IRh"/>
+                            <constraint firstItem="4eY-sG-reu" firstAttribute="leading" secondItem="zAN-rq-E5Q" secondAttribute="leading" id="Do4-Bz-wB6"/>
+                            <constraint firstItem="4eY-sG-reu" firstAttribute="bottom" secondItem="zAN-rq-E5Q" secondAttribute="bottom" id="LHe-W6-Nd2"/>
+                            <constraint firstItem="4eY-sG-reu" firstAttribute="top" secondItem="Dy0-qK-7SP" secondAttribute="top" id="yDb-0B-kw5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zAN-rq-E5Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="rGr-AU-SWY" id="iAq-Qm-ukI"/>
+                        <outlet property="button2" destination="Rbz-cr-ilt" id="EkM-iF-4rG"/>
+                        <outlet property="button3" destination="HDy-ho-pw6" id="Vdw-dG-w6D"/>
+                        <outlet property="button4" destination="a2R-fD-Ydg" id="yby-Cf-e80"/>
+                        <outlet property="button5" destination="n2K-zQ-dAr" id="atl-eS-XTz"/>
+                        <outlet property="button6" destination="DXu-Ba-NfX" id="Rtu-XO-qtj"/>
+                        <outlet property="label1" destination="5FI-RT-Vb7" id="Jc9-tv-o9C"/>
+                        <outlet property="label2" destination="48I-yE-ma5" id="Nh3-Pe-vGd"/>
+                        <outlet property="label3" destination="DKL-1j-3li" id="1h2-fj-WFU"/>
+                        <outlet property="mainMenu" destination="Atl-iu-PGg" id="SAO-HN-8Bs"/>
+                        <outlet property="motto" destination="vws-OI-A0t" id="KHS-rA-jkC"/>
+                        <outlet property="previousGoal" destination="0aV-hI-RsU" id="LGl-rT-goi"/>
+                        <outlet property="result" destination="2yD-An-yQi" id="n8R-5u-Jx1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1EK-Vy-ULq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="814"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="iBu-Ag-P64">
+            <objects>
+                <viewController id="mVw-1N-NhI" customClass="SecondViewController" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZk-CI-XB5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background6" translatesAutoresizingMaskIntoConstraints="NO" id="zJT-Jm-kOr">
+                                <rect key="frame" x="-1" y="0.0" width="379" height="667"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zWm-dh-6Jn">
+                                <rect key="frame" x="26" y="113" width="315" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="explanation ">
+                                    <color key="titleColor" red="0.5042239531667061" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1:" destination="mVw-1N-NhI" eventType="touchUpInside" id="bo2-MZ-IYb"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Glm-0q-BkZ">
+                                <rect key="frame" x="26" y="364" width="315" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="explanation">
+                                    <color key="titleColor" red="0.49416616889999998" green="0.01273470457" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3:" destination="mVw-1N-NhI" eventType="touchUpInside" id="oKH-IZ-RIg"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Pjl-0j-91G">
+                                <rect key="frame" x="26" y="487" width="315" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="explanation">
+                                    <color key="titleColor" red="0.4941661688846064" green="0.01273470457343906" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button4:" destination="mVw-1N-NhI" eventType="touchUpInside" id="Bmq-aQ-zSn"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lLY-va-vBo">
+                                <rect key="frame" x="25" y="241" width="315" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="explanation">
+                                    <color key="titleColor" red="0.44033873922468303" green="0.031993827650348305" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2:" destination="mVw-1N-NhI" eventType="touchUpInside" id="j2S-0z-gdH"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PM-1O-FsW">
+                                <rect key="frame" x="86" y="604" width="192" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.84013622389999998" blue="0.91022096409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="continueButton:" destination="mVw-1N-NhI" eventType="touchUpInside" id="2MS-Fm-89D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-ZZ-pCR">
+                                <rect key="frame" x="82" y="138" width="218" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                <state key="normal" title="IELTS">
+                                    <color key="titleColor" red="1" green="0.33923199399269754" blue="0.44034050435219596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="IELTS:" destination="mVw-1N-NhI" eventType="touchUpInside" id="gG7-v0-xwF"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJG-gi-D13">
+                                <rect key="frame" x="0.0" y="44" width="174" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group1"/>
+                                <connections>
+                                    <action selector="group1:" destination="mVw-1N-NhI" eventType="touchUpInside" id="OgL-MN-AjD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTc-Bw-t52">
+                                <rect key="frame" x="239" y="113" width="136" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <state key="normal" title="Search Words">
+                                    <color key="titleColor" red="0.41176070275127907" green="0.29212883525030187" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="d1N-Mh-dJu"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nt-Ul-4OW">
+                                <rect key="frame" x="26" y="24" width="103" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.10645951250000001" blue="0.26366582579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYS-Yk-zNc">
+                                <rect key="frame" x="0.0" y="243" width="143" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="31"/>
+                                <state key="normal" title="Self learn">
+                                    <color key="titleColor" red="1" green="0.53053038573178801" blue="0.2824094225314735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t2d-SU-HDx" kind="show" id="Fve-m9-3Ie"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zps-Ly-BQ8">
+                                <rect key="frame" x="9" y="96" width="120" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="31"/>
+                                <state key="normal" title="Review">
+                                    <color key="titleColor" red="1" green="0.28883397045682546" blue="0.50145338562304387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="review:" destination="mVw-1N-NhI" eventType="touchUpInside" id="Rk8-B9-HjR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StN-EK-caC">
+                                <rect key="frame" x="195" y="247" width="185" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <state key="normal" title="Mistakes Collection">
+                                    <color key="titleColor" red="1" green="0.19922466331949151" blue="0.42953321459155525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mistake:" destination="mVw-1N-NhI" eventType="touchUpInside" id="xah-Ap-jzV"/>
+                                    <segue destination="Yso-Hs-JWD" kind="show" identifier="segue" id="BTU-nG-ZOk"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osT-a3-VG7">
+                                <rect key="frame" x="207" y="40" width="149" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group2">
+                                    <color key="titleColor" red="1" green="0.54356408379840104" blue="0.69895705294415489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group2:" destination="mVw-1N-NhI" eventType="touchUpInside" id="Pxs-m7-1Sc"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-uq-HnI">
+                                <rect key="frame" x="-25" y="138" width="204" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group3">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group3:" destination="mVw-1N-NhI" eventType="touchUpInside" id="rH8-el-ylw"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn9-aj-ZeR">
+                                <rect key="frame" x="230" y="138" width="129" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group4">
+                                    <color key="titleColor" red="1" green="0.0075040572465832067" blue="0.81558465375866795" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group4:" destination="mVw-1N-NhI" eventType="touchUpInside" id="DhM-fG-e3c"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWT-qq-Z1p">
+                                <rect key="frame" x="9" y="247" width="170" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group5">
+                                    <color key="titleColor" red="0.11162977353437953" green="0.010792611241820627" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group5:" destination="mVw-1N-NhI" eventType="touchUpInside" id="yMA-rZ-mZ9"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyt-GP-m0H">
+                                <rect key="frame" x="221" y="232" width="187" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group6">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.05960557291662294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group6:" destination="mVw-1N-NhI" eventType="touchUpInside" id="OMK-Sy-vin"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-1l-JVx">
+                                <rect key="frame" x="9" y="358" width="144" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group7">
+                                    <color key="titleColor" red="1" green="0.72138068653251664" blue="0.048011815007070191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group7:" destination="mVw-1N-NhI" eventType="touchUpInside" id="Sdn-8i-GcY"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-oZ-5MO">
+                                <rect key="frame" x="215" y="358" width="145" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group8">
+                                    <color key="titleColor" red="0.0097735896651338638" green="0.46655544961620476" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group8:" destination="mVw-1N-NhI" eventType="touchUpInside" id="nRo-Dz-qgn"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0o-jw-FZF">
+                                <rect key="frame" x="-7" y="479" width="160" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group9">
+                                    <color key="titleColor" red="1" green="0.42805186989976307" blue="0.94501250329190456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group9:" destination="mVw-1N-NhI" eventType="touchUpInside" id="DAT-69-qfe"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijL-OZ-Ecq">
+                                <rect key="frame" x="188" y="479" width="186" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Group10">
+                                    <color key="titleColor" red="1" green="0.13320727833298907" blue="0.30140518314398757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="group10:" destination="mVw-1N-NhI" eventType="touchUpInside" id="Qnv-ST-tBk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSb-Js-dKC">
+                                <rect key="frame" x="54" y="9" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSJ-5L-eho">
+                                <rect key="frame" x="94" y="295" width="194" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                <state key="normal" title="CET4">
+                                    <color key="titleColor" red="0.90124705409857508" green="0.52342909766483925" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cet4:" destination="mVw-1N-NhI" eventType="touchUpInside" id="JEi-yX-2qT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goA-zn-jpJ">
+                                <rect key="frame" x="57" y="458" width="263" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                <state key="normal" title="CET6">
+                                    <color key="titleColor" red="0.17626827501132647" green="0.43455314778538778" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cet6:" destination="mVw-1N-NhI" eventType="touchUpInside" id="FQS-L0-IK9"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRT-G8-PX8">
+                                <rect key="frame" x="49" y="40" width="284" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.22192192803506217" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu3-FA-Tmh">
+                                <rect key="frame" x="237" y="404" width="119" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="44"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.23426331131935352" green="0.66378868188458218" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="mVw-1N-NhI" eventType="touchUpInside" id="kVl-7v-FpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK7-ev-YPd">
+                                <rect key="frame" x="0.0" y="393" width="108" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="44"/>
+                                <state key="normal" title="Goal">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.059605572920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goalButton:" destination="mVw-1N-NhI" eventType="touchUpInside" id="8wt-Y4-h3W"/>
+                                    <segue destination="mN5-xo-pLl" kind="show" identifier="front" id="cCP-1c-pin"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfw-ck-tfY">
+                                <rect key="frame" x="137" y="14" width="219" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.059605572920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-Z0-0mr">
+                                <rect key="frame" x="292" y="618" width="83" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="mVw-1N-NhI" eventType="touchUpInside" id="RsT-PG-R9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frf-9v-jek">
+                                <rect key="frame" x="56" y="54" width="265" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="37"/>
+                                <state key="normal" title="Good Sentence">
+                                    <color key="titleColor" red="0.31987624935255654" green="0.5216264915407034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bfx-3y-87x" kind="show" id="CiF-Y8-hjT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqQ-Kg-zsD">
+                                <rect key="frame" x="-7" y="546" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="41"/>
+                                <state key="normal" title="Video">
+                                    <color key="titleColor" red="0.81805848109892454" green="0.32743396859462526" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eqD-p7-Dsu" kind="show" id="moW-GS-eGR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-VL-Kte">
+                                <rect key="frame" x="237" y="540" width="134" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="41"/>
+                                <state key="normal" title="Speech"/>
+                                <connections>
+                                    <segue destination="246-QP-xfe" kind="show" id="a7B-0u-g2p"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-7F-MXf">
+                                <rect key="frame" x="0.0" y="438" width="375" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-8d-Rmx">
+                                <rect key="frame" x="-2" y="0.0" width="378" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-nl-9db">
+                                <rect key="frame" x="-2" y="217" width="377" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96836072312877608" blue="0.89378326257258811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zJT-Jm-kOr" firstAttribute="leading" secondItem="TZk-CI-XB5" secondAttribute="leading" constant="-1" id="39G-9j-P4N"/>
+                            <constraint firstAttribute="trailing" secondItem="zJT-Jm-kOr" secondAttribute="trailing" constant="-3" id="Mjr-62-Vs4"/>
+                            <constraint firstItem="zJT-Jm-kOr" firstAttribute="bottom" secondItem="h1j-XF-YSL" secondAttribute="bottom" id="WHg-Qg-z6W"/>
+                            <constraint firstItem="zJT-Jm-kOr" firstAttribute="top" secondItem="TZk-CI-XB5" secondAttribute="top" id="lUU-FS-ZcL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h1j-XF-YSL"/>
+                    </view>
+                    <connections>
+                        <outlet property="IELTS" destination="YAB-ZZ-pCR" id="JWL-CN-4dp"/>
+                        <outlet property="backButton" destination="dF2-Z0-0mr" id="Zgq-Te-bV8"/>
+                        <outlet property="button1" destination="zWm-dh-6Jn" id="NME-RA-oUJ"/>
+                        <outlet property="button2" destination="lLY-va-vBo" id="z88-id-Stx"/>
+                        <outlet property="button3" destination="Glm-0q-BkZ" id="SB7-7e-Tpj"/>
+                        <outlet property="button4" destination="Pjl-0j-91G" id="Ln0-I1-7eN"/>
+                        <outlet property="cet4" destination="DSJ-5L-eho" id="1hu-YY-nJs"/>
+                        <outlet property="cet6" destination="goA-zn-jpJ" id="jjq-JX-Dy7"/>
+                        <outlet property="continueButton" destination="9PM-1O-FsW" id="2r3-cZ-M2C"/>
+                        <outlet property="goalButton" destination="CK7-ev-YPd" id="c4h-MZ-Ct1"/>
+                        <outlet property="goodSentence" destination="frf-9v-jek" id="r0f-QG-NrI"/>
+                        <outlet property="group1" destination="nJG-gi-D13" id="s3t-tC-VhN"/>
+                        <outlet property="group10" destination="ijL-OZ-Ecq" id="i5c-9m-xgH"/>
+                        <outlet property="group2" destination="osT-a3-VG7" id="ugc-cV-p2g"/>
+                        <outlet property="group3" destination="8cx-uq-HnI" id="78p-Cd-f8N"/>
+                        <outlet property="group4" destination="Dn9-aj-ZeR" id="ecr-f7-tY7"/>
+                        <outlet property="group5" destination="qWT-qq-Z1p" id="8W5-I5-7t0"/>
+                        <outlet property="group6" destination="Iyt-GP-m0H" id="D8Q-jB-O3H"/>
+                        <outlet property="group7" destination="pkE-1l-JVx" id="fMI-zk-SDE"/>
+                        <outlet property="group8" destination="7Hx-oZ-5MO" id="QUQ-eg-dn0"/>
+                        <outlet property="group9" destination="J0o-jw-FZF" id="w4P-7z-6nQ"/>
+                        <outlet property="mistake" destination="StN-EK-caC" id="gAq-aC-hiB"/>
+                        <outlet property="reset" destination="fu3-FA-Tmh" id="z9X-wV-UwP"/>
+                        <outlet property="review" destination="zps-Ly-BQ8" id="2pM-xn-pim"/>
+                        <outlet property="scoreLabel" destination="3nt-Ul-4OW" id="NfV-hC-HN6"/>
+                        <outlet property="search" destination="DTc-Bw-t52" id="PpE-Gz-6sY"/>
+                        <outlet property="selfLearn" destination="CYS-Yk-zNc" id="Cez-fq-SVZ"/>
+                        <outlet property="speech" destination="GjM-VL-Kte" id="2lJ-SW-JLD"/>
+                        <outlet property="timerLabel" destination="Gfw-ck-tfY" id="THL-l6-qRr"/>
+                        <outlet property="video" destination="rqQ-Kg-zsD" id="0oz-3O-ZKP"/>
+                        <outlet property="view1" destination="HQq-7F-MXf" id="dcQ-9V-5V6"/>
+                        <outlet property="view2" destination="WJE-nl-9db" id="LY9-Fv-wjk"/>
+                        <outlet property="view3" destination="Oj7-8d-Rmx" id="Lsa-gc-qF6"/>
+                        <outlet property="wordLabel" destination="hRT-G8-PX8" id="39U-Xc-7Dw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyo-Ck-l3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="do4-sv-5i3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t2d-SU-HDx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="thl-W0-foe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CvV-Vg-zJu" kind="relationship" relationship="rootViewController" id="Lrj-NB-ZAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSc-Uq-tt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.4000000000001" y="550.07496251874068"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="QOJ-MQ-fsK">
+            <objects>
+                <viewController id="eqD-p7-Dsu" customClass="video" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8I-hT-t7D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-3c-VSB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-yq-Ayb">
+                                <rect key="frame" x="103" y="114" width="153" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="27"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <segue destination="xCi-x3-Vix" kind="unwind" unwindAction="unwindFor:" id="che-De-3w4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please make notes about this video and record it in the self learning ^_^" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-m0-eh1">
+                                <rect key="frame" x="35" y="502" width="324" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="26"/>
+                                <color key="textColor" red="0.81644871124928453" green="0.35181182971963088" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps3-ZD-ep7">
+                                <rect key="frame" x="22" y="246" width="331" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="31"/>
+                                <state key="normal" title="Press there to watch video">
+                                    <color key="titleColor" red="0.14582490821444605" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="eqD-p7-Dsu" eventType="touchUpInside" id="O9j-sj-1Se"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QuQ-3c-VSB" firstAttribute="top" secondItem="W8I-hT-t7D" secondAttribute="top" id="D0K-Du-FMC"/>
+                            <constraint firstItem="QuQ-3c-VSB" firstAttribute="trailing" secondItem="IdU-75-raP" secondAttribute="trailing" id="TJc-nO-jlw"/>
+                            <constraint firstItem="QuQ-3c-VSB" firstAttribute="leading" secondItem="IdU-75-raP" secondAttribute="leading" id="g8G-LT-vYi"/>
+                            <constraint firstItem="QuQ-3c-VSB" firstAttribute="bottom" secondItem="IdU-75-raP" secondAttribute="bottom" id="ham-EE-8of"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IdU-75-raP"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Ps3-ZD-ep7" id="gwY-3F-ahm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMo-tZ-Vt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xCi-x3-Vix" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="704.79999999999995" y="951.27436281859082"/>
+        </scene>
+        <!--Wrrong Collection View Controller-->
+        <scene sceneID="NaT-fu-crY">
+            <objects>
+                <viewController id="Yso-Hs-JWD" customClass="wrrongCollectionViewController" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aCJ-8B-7tF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="16q-fn-fHy">
+                                <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yso-Hs-JWD" id="Mhd-YP-f7N"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-Qs-D8v">
+                                <rect key="frame" x="105" y="20" width="165" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="29"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="1" green="0.51375580898726758" blue="0.7015343159643711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fVi-aD-z9k" kind="unwind" unwindAction="unwindFor:" id="OmU-vR-e9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="eJK-s5-7B6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3h-9Z-ZAy">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="fmN-pi-vwl">
+                            <connections>
+                                <segue destination="fVi-aD-z9k" kind="unwind" unwindAction="unwindFor:" id="SA1-3U-7PQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQZ-HT-l4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fVi-aD-z9k" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="1605"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="SXF-j9-9gF">
+            <objects>
+                <viewController id="2mH-H4-sWh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ahn-lp-Orj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pst-YU-Aus">
+                                <rect key="frame" x="10" y="64" width="357" height="583"/>
+                                <color key="backgroundColor" red="1" green="0.87384804530000004" blue="0.92156739600000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">1.Rules can hold children accountable for their behaviour and help them develop good behaviour patterns from a young aga
+
+2.Unlike adults children are normally not aware of the consequences of bad behaviour, and setting rules can help them realise how to behave in a socially acceptable way.
+
+3.They dare not put their ideas into practice.
+
+4.The problems in the real world are complex and they cannot tackle these problems without using imagination.
+
+5.People’s life expectancy has improved in many societies, possibly because of improvements in technology and the increase in personal wealth.
+
+6.One problem associated with an aging population is that health care costs will increase, imposing a burden on taxpayers.
+
+7.This means that governments have to pour money in caring for the elderly, but other essential services like education will be underfunded.
+
+8.This problem can have an adverse impact on social progress since many young people may not go to university without the financial support from the government.
+
+9.The ability to absorb information and complete work normally declines with age.
+
+10.Many elderly people have a conservative attitude towards technology and cannot adopt cutting-edge technology efficiently.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.87384804530000004" blue="0.92156739600000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pst-YU-Aus" firstAttribute="leading" secondItem="uAp-bu-f9L" secondAttribute="leading" constant="10" id="42o-Da-nck"/>
+                            <constraint firstItem="pst-YU-Aus" firstAttribute="top" secondItem="uAp-bu-f9L" secondAttribute="top" id="FAM-z4-Zrn"/>
+                            <constraint firstItem="uAp-bu-f9L" firstAttribute="bottom" secondItem="pst-YU-Aus" secondAttribute="bottom" constant="20" id="Oop-5T-Zxe"/>
+                            <constraint firstItem="uAp-bu-f9L" firstAttribute="trailing" secondItem="pst-YU-Aus" secondAttribute="trailing" constant="8" id="zAh-Ua-3ef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uAp-bu-f9L"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 1" id="6vA-GQ-fc9">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="nOA-gk-jKr">
+                            <connections>
+                                <segue destination="gEQ-Nx-55J" kind="show" id="1ae-L0-dQs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYB-8c-oJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="1197.7511244377813"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="IgT-wU-byz">
+            <objects>
+                <viewController id="gEQ-Nx-55J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBv-gc-Igp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mvk-0K-elo">
+                                <rect key="frame" x="13" y="79" width="349" height="551"/>
+                                <color key="backgroundColor" red="0.99778622429999997" green="1" blue="0.79219576550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.The can work as consultants and impart their knowledge and skills to the younger generation.
+
+2.This society can draw upon the expertise of older people.
+
+3.It is no exaggerating to say that  the history of books is also the history of human development.
+
+4.Films can be the most artistic among the three forms of media as it combines audio,visual and even special effects.
+
+5.Radio can provide the fastest source of information.
+
+6.In conclusion, books make people think, movies let people enjoy and radio helps people live
+
+7.No other media parallels with it in terms of audience coverage
+
+8.What is particular of television lies in its unmatched magic of live broadcast
+
+9.Television viewing can interfere with children’s studies and other activities which can benefit children’s development
+
+10. Television has exposed children to a word of knowledge
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99778622426697516" green="1" blue="0.79219576550112825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mvk-0K-elo" firstAttribute="leading" secondItem="6z3-eP-fG1" secondAttribute="leading" constant="13" id="BJm-DJ-53G"/>
+                            <constraint firstItem="Mvk-0K-elo" firstAttribute="top" secondItem="6z3-eP-fG1" secondAttribute="top" constant="15" id="Cfg-gX-1CX"/>
+                            <constraint firstItem="6z3-eP-fG1" firstAttribute="trailing" secondItem="Mvk-0K-elo" secondAttribute="trailing" constant="13" id="akA-4e-ezI"/>
+                            <constraint firstItem="6z3-eP-fG1" firstAttribute="bottom" secondItem="Mvk-0K-elo" secondAttribute="bottom" constant="37" id="tVm-yH-4j0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6z3-eP-fG1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 2" id="K0D-ib-VIf">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="a7V-oe-D0x">
+                            <connections>
+                                <segue destination="5RS-do-ZwP" kind="show" id="2Ge-ig-Ovy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjj-hD-Gvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2900" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 3-->
+        <scene sceneID="RMk-iX-RgM">
+            <objects>
+                <viewController id="5RS-do-ZwP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHK-iw-mzv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P5g-8A-LRm">
+                                <rect key="frame" x="10" y="64" width="354" height="583"/>
+                                <color key="backgroundColor" red="0.82525426436754989" green="1" blue="0.96703014419662969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.Allowing them to gain an insight into different subjects.
+
+2.This kind of knowledge can complement what they learn at school
+
+3.Parents and teachers should impose restrictions on children’s television viewing, rather that endorse this habit
+
+4.Technology innovations and mass production have reduced the cost of production and improved the productivity of the workforce
+
+5.As the overconsumption of consumer goods is pervasive, it is important to take some measures to mitigate this problem
+
+6.Happiness is very difficult to define, because it means so many different things to different people
+
+7.Overall, I think an ability to keep clear perspectives in life is a more essential factor in achieving happiness.
+
+8.By that I mean an ability to have a clear sense of what is important in our lives and what is not
+
+9.By contrast, employment opportunities are scarce in rural areas
+
+10.Young couples who used to live in the countryside intend to send their children to good schools in urban areas, so as to break the cycle of poverty.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82525426440000005" green="1" blue="0.9670301442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5LW-Gy-470" firstAttribute="trailing" secondItem="P5g-8A-LRm" secondAttribute="trailing" constant="11" id="Djn-e3-Hg3"/>
+                            <constraint firstItem="P5g-8A-LRm" firstAttribute="top" secondItem="5LW-Gy-470" secondAttribute="top" id="FUb-d0-S0X"/>
+                            <constraint firstItem="5LW-Gy-470" firstAttribute="bottom" secondItem="P5g-8A-LRm" secondAttribute="bottom" constant="20" id="i4C-W5-OXF"/>
+                            <constraint firstItem="P5g-8A-LRm" firstAttribute="leading" secondItem="5LW-Gy-470" secondAttribute="leading" constant="10" id="liW-hI-JKl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5LW-Gy-470"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 3" id="VPJ-dx-2zl">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="6oB-Ua-veX">
+                            <connections>
+                                <segue destination="D24-NB-pWu" kind="show" id="9il-f5-Jxf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZJ-HY-zpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3581.5999999999999" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 4-->
+        <scene sceneID="4Vs-Xc-NPe">
+            <objects>
+                <viewController id="D24-NB-pWu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IT6-wV-Ps0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="you-Yk-CqR">
+                                <rect key="frame" x="9" y="73" width="350" height="586"/>
+                                <color key="backgroundColor" red="1" green="0.88903006608394319" blue="0.9815561550800499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.It is not easy to revitalise the local economy
+
+2.Because of the widening gap between rich and poor
+
+3.In conclusion, poor employment prospects and sluggish local economies have caused the population shift to cities
+
+4.Low-cost air travel has enable us to travel across borders more frequently than before
+
+5.If air tickets are highly affordable, they may choose to travel to some exotic locations on holiday and get away from everyday life
+
+6.Air companies can turn to technology innovations as part of the effort to reduce the strain on the environment
+
+7.Creation can only be nurtured in an environment of freedom
+
+8.We have to admit that there are some forms of restriction that should be imposed on artists
+
+9.If all people obey the law, a country can maintain order and embrace more opportunities for economic development
+
+10.The government can relax regulations to faster innovations
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.88903006610000002" blue="0.98155615510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ngo-t4-093" firstAttribute="trailing" secondItem="you-Yk-CqR" secondAttribute="trailing" constant="16" id="0eD-r1-GNb"/>
+                            <constraint firstItem="you-Yk-CqR" firstAttribute="top" secondItem="Ngo-t4-093" secondAttribute="top" constant="9" id="K1M-Gq-S7t"/>
+                            <constraint firstItem="you-Yk-CqR" firstAttribute="leading" secondItem="Ngo-t4-093" secondAttribute="leading" constant="9" id="Sei-md-JRh"/>
+                            <constraint firstItem="Ngo-t4-093" firstAttribute="bottom" secondItem="you-Yk-CqR" secondAttribute="bottom" constant="8" id="ZrY-EK-6zm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ngo-t4-093"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 4" id="rwu-bB-uEd">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Z7E-EP-sN9">
+                            <connections>
+                                <segue destination="EQu-q6-Kx0" kind="show" id="pfQ-rQ-8Le"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5G-II-9ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4261.6000000000004" y="1197.7511244377813"/>
+        </scene>
+        <!--Page 5-->
+        <scene sceneID="DjA-B2-D48">
+            <objects>
+                <viewController id="EQu-q6-Kx0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qgV-4u-6Lp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZGd-Qr-Esu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="583"/>
+                                <color key="backgroundColor" red="0.80009122849630543" green="1" blue="0.8173221524672869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.The advent of the Internet has changed the way people live their lives and complete work
+
+2.In spite of these facts, distance learning may not offer students the networking experience which they can get in a brick and mortar college
+
+3.They do not have opportunities to build up a network of contacts, which can have a negative impact on their career development
+
+4.However, whether only government and big corporations have the resources and capacities to preserve our environment is a controversial issue
+
+5.It is clear that human activities have had the greatest impact on the environment throughout the history
+
+6.In summary, no effort is too small when we are protecting the environment
+
+7.Only by doing so can we assure that we will hand this beautiful planet to our next generation, and the next generation therefore
+
+8.It is clear that human beings are standing at the top of the food chain of this planet
+
+9.As big fish eat small ones, mankind uses animals for its own benefit, which is consistent with natural law
+
+10.It is unrealistic to ban using animals since the history of human civilisation is entwined with the history of the ways we have learned to manipulate animal resources
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80009122850000003" green="1" blue="0.81732215249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZGd-Qr-Esu" firstAttribute="top" secondItem="0MQ-ps-aOi" secondAttribute="top" id="Jk1-lW-6d3"/>
+                            <constraint firstItem="ZGd-Qr-Esu" firstAttribute="trailing" secondItem="0MQ-ps-aOi" secondAttribute="trailing" id="u5U-Lk-pwy"/>
+                            <constraint firstItem="0MQ-ps-aOi" firstAttribute="bottom" secondItem="ZGd-Qr-Esu" secondAttribute="bottom" constant="20" id="vp0-Pa-8PX"/>
+                            <constraint firstItem="ZGd-Qr-Esu" firstAttribute="leading" secondItem="0MQ-ps-aOi" secondAttribute="leading" id="w92-P2-Z2q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0MQ-ps-aOi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 5" id="WHE-Ac-6Jp">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="HTh-Fk-54d">
+                            <connections>
+                                <segue destination="MFA-jo-cg0" kind="show" id="11J-BK-Jog"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2v-Zd-5r0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4948" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 6-->
+        <scene sceneID="zNM-iS-C8y">
+            <objects>
+                <viewController id="MFA-jo-cg0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zfs-B7-jkK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LT6-81-XGX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="583"/>
+                                <color key="backgroundColor" red="0.94137557070288413" green="0.89636152986901751" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.Indeed, these behaviours are not only cruel and unnecessary, but actually against long-term interests of human race
+
+2.By doing so, we can ensure that our next generation will also benefit from animal resource
+
+3.However, discussion now centres on whether the technology has also widened the gap between the rich and the poor
+
+4.Improper distribution of social wealth has caused such a social problem
+
+5.In order to bridge this wealth gap, the most effective and direct method should be taxation leverage
+
+6.The internet is a cheaper and more accessible platform for ordinary people to make a fortune
+
+7.The right solution for those nations is just to introduce advanced technologies to improve social productivity, which is like the age-old chicken-or-egg question
+
+8.Without a great public transport system, commuters find it is difficult to travel to and from work, and traffic congestion could reduce work efficiency
+
+9.These projects or services are normally not funded by the private sector because of the low profit margin
+
+10.We can also recognise that the governments can achieve the goal of income redistribution by taxation
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9413755707" green="0.89636152989999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LT6-81-XGX" firstAttribute="trailing" secondItem="PrW-ai-jQr" secondAttribute="trailing" id="6j1-Xs-ke1"/>
+                            <constraint firstItem="LT6-81-XGX" firstAttribute="leading" secondItem="PrW-ai-jQr" secondAttribute="leading" id="aF9-ga-8bh"/>
+                            <constraint firstItem="LT6-81-XGX" firstAttribute="top" secondItem="PrW-ai-jQr" secondAttribute="top" id="bLo-4j-Kwd"/>
+                            <constraint firstItem="PrW-ai-jQr" firstAttribute="bottom" secondItem="LT6-81-XGX" secondAttribute="bottom" constant="20" id="xF4-QV-9th"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PrW-ai-jQr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 6" id="wFM-vP-GYf">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="S53-zn-5u6">
+                            <connections>
+                                <segue destination="Q20-6g-TTU" kind="show" id="9mu-Nd-Uvx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msE-Wq-KJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5621.6000000000004" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 7-->
+        <scene sceneID="tZu-hy-eef">
+            <objects>
+                <viewController id="Q20-6g-TTU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="756-XZ-Ta2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="25w-Ws-Uec">
+                                <rect key="frame" x="0.0" y="80" width="375" height="558"/>
+                                <color key="backgroundColor" red="1" green="0.97664143467679354" blue="0.98338824811477565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.Money is a great motivator for most people because they can improve living standards and gain a sense of accomplishment
+
+2.Overall, I am convinced that taxes are the lifeblood of the economy although high taxes can have an adverse effect on economic growth
+
+3.They are less likely to focus on key disciplines if they are required to spend time in studying moral principles and behaviour norms
+
+4.Students who do not have a moral compass cannot achieve success, even though they perform well at school
+
+5.They will also be able to develop a strong working relationship with colleagues once they start working
+
+6.I reckon that we should give priority to essential services and infrastructures and then fund the arts when governments have a budget surplus
+
+7.Exposure to artworks can reduce our pressure and put us in a good mood
+
+8.Schools and libraries can disseminate knowledge and improve young people’s job prospects
+
+9.In contrast, sculptures, paintings and operas are luxury items to most people and are not likely to bring tangible benefits to them
+
+10.In my view, what they need most is not financial aid or loans, but advanced technologies and talents in certain key areas
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97664143469999998" blue="0.98338824810000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJV-KX-CYN" firstAttribute="bottom" secondItem="25w-Ws-Uec" secondAttribute="bottom" constant="29" id="9aJ-4J-x8C"/>
+                            <constraint firstItem="25w-Ws-Uec" firstAttribute="top" secondItem="FJV-KX-CYN" secondAttribute="top" constant="16" id="9pa-7Q-dH1"/>
+                            <constraint firstItem="25w-Ws-Uec" firstAttribute="leading" secondItem="FJV-KX-CYN" secondAttribute="leading" id="urq-9u-cxY"/>
+                            <constraint firstItem="25w-Ws-Uec" firstAttribute="trailing" secondItem="FJV-KX-CYN" secondAttribute="trailing" id="wSf-sT-Tnp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJV-KX-CYN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 7" id="x0W-nm-uuh">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="y7j-Jk-KT8">
+                            <connections>
+                                <segue destination="jgr-Dq-28M" kind="show" id="yn9-8A-aRj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izE-S6-txo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6296.8000000000002" y="1188.7556221889056"/>
+        </scene>
+        <!--Page 8-->
+        <scene sceneID="trl-4L-OPv">
+            <objects>
+                <viewController id="jgr-Dq-28M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Q7-E0-eUN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="15i-GX-DGM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="583"/>
+                                <color key="backgroundColor" red="0.91401533977723681" green="0.97619894720200706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.It is obvious that modern technologies and scientific advancement are the driving force behind rich nations
+
+2.Hence wealth is accumulated at a high speed
+
+3.Therefore, to help the poor, we had better give them tools to make a fortune
+
+4.These action can facilitate economic growth sustainably
+
+5.From this sense, give money to poor regions is not a direct aid, but an indirect form
+
+6.Advertising is a powerful marketing tool that almost every company is utilising
+
+7.My view is that everyone as a consumer should have a balanced understanding of ads
+
+8.Advertising bridges the demand and supply in the market
+
+9.It is also an essential way for companies to promote their products, boost sales, make profits and build brand images
+
+10.There is a dark side to this picture
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91401533980000005" green="0.9761989472" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="15i-GX-DGM" firstAttribute="top" secondItem="bGA-U1-lpV" secondAttribute="top" id="4ze-jo-utN"/>
+                            <constraint firstItem="15i-GX-DGM" firstAttribute="leading" secondItem="bGA-U1-lpV" secondAttribute="leading" id="ODR-CW-lvy"/>
+                            <constraint firstItem="bGA-U1-lpV" firstAttribute="bottom" secondItem="15i-GX-DGM" secondAttribute="bottom" constant="20" id="lwx-W9-pwm"/>
+                            <constraint firstItem="15i-GX-DGM" firstAttribute="trailing" secondItem="bGA-U1-lpV" secondAttribute="trailing" id="rLa-mJ-sJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bGA-U1-lpV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 8" id="3wX-6B-q0F">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="6hb-Gb-NBu">
+                            <connections>
+                                <segue destination="QZd-jn-IOb" kind="show" id="SNf-bT-j6s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xh-bG-Fbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6925.6000000000004" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 9-->
+        <scene sceneID="pmu-7R-82s">
+            <objects>
+                <viewController id="QZd-jn-IOb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mb5-7g-T6f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-NW-BVh">
+                                <rect key="frame" x="0.0" y="74" width="375" height="562"/>
+                                <color key="backgroundColor" red="1" green="0.81746061444512363" blue="0.89558653854618497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1.People, nevertheless, hold various opinions in terms of the issue whether it is a blessing or a curse
+
+2.It is one's practical capability that enterprises truly value
+
+3. The fact that the unemployment rates in quite a number of countries keep rising cannot be denied
+
+4. With increasing number of women taking part in full-time jobs, who should take care of children has become a social issue
+
+5. I don't think it necessary to invent a new kind of language to take the place of English
+6. It is a pity that all the majority of people care about is how they could be paid more
+
+7.I hold it essential to examine the both sides of the issue before presenting my viewpoint
+
+8. Different people hold various viewpoints as to the issue whether globalization is beneficial to the economic development
+
+9.I hold it essential to examine the both sides of the issue before presenting my viewpoint.
+
+10. People seem to fail to take into account the fact that education does not end with graduation
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.81746061439999995" blue="0.89558653850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oUU-NW-BVh" firstAttribute="leading" secondItem="0KC-q9-gNR" secondAttribute="leading" id="ZFZ-Y6-nqZ"/>
+                            <constraint firstItem="0KC-q9-gNR" firstAttribute="bottom" secondItem="oUU-NW-BVh" secondAttribute="bottom" constant="31" id="l6t-rQ-31r"/>
+                            <constraint firstItem="oUU-NW-BVh" firstAttribute="top" secondItem="0KC-q9-gNR" secondAttribute="top" constant="10" id="owu-bU-dBg"/>
+                            <constraint firstItem="oUU-NW-BVh" firstAttribute="trailing" secondItem="0KC-q9-gNR" secondAttribute="trailing" id="rwc-nT-bYQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0KC-q9-gNR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 9" id="1cI-Rn-z94">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="8kw-wM-TKJ">
+                            <connections>
+                                <segue destination="5Q0-3o-G4s" kind="show" id="TFf-zg-pgf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYi-WB-8Ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7565.6000000000004" y="1199.5502248875564"/>
+        </scene>
+        <!--Page 10-->
+        <scene sceneID="Qn3-56-Gtr">
+            <objects>
+                <viewController id="5Q0-3o-G4s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hoJ-wW-sMa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-my-eR7">
+                                <rect key="frame" x="0.0" y="74" width="375" height="573"/>
+                                <color key="backgroundColor" red="1" green="0.98915120649726973" blue="0.94186715451300873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">1. A proper part-time job does not occupy students' too much time. In fact, it is unhealthy for them to spend all of time on their study. As an old saying goes: All work and no play makes Jack a dull boy
+
+2.Nowadays, many students always go into raptures at the mere mention of the coming life of high school or college they will begin. Unfortunately, for most young people, it is not pleasant experience on their first day on campus.
+
+3. In view of the seriousness of this problem, effective measures should be taken before things get worse.
+
+4.The majority of students believe that part-time job will provide them with more opportunities to develop their interpersonal skills, which may put them in a favorable position in the future job markets.
+
+5. It is indisputable that there are millions of people who still have a miserable life and have to face the dangers of starvation and exposure.
+
+6.Although this view is widely held, this is little evidence that education can be obtained at any age and at any place.
+
+7. No one can deny the fact that a person's education is the most important aspect of his life.
+
+8.People equate success in life with the ability of operating computer
+
+9.In the last decades, advances in medical technology have made it possible for people to live longer than in the past.
+
+10. In fact, we have to admit the fact that the quality of life is as important as life itself.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98915120649999999" blue="0.94186715450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O2W-xx-dxO" firstAttribute="bottom" secondItem="QU8-my-eR7" secondAttribute="bottom" constant="20" id="10W-vt-0iK"/>
+                            <constraint firstItem="QU8-my-eR7" firstAttribute="top" secondItem="O2W-xx-dxO" secondAttribute="top" constant="10" id="9fg-v2-OHa"/>
+                            <constraint firstItem="QU8-my-eR7" firstAttribute="trailing" secondItem="O2W-xx-dxO" secondAttribute="trailing" id="Aw0-gz-uDe"/>
+                            <constraint firstItem="QU8-my-eR7" firstAttribute="leading" secondItem="O2W-xx-dxO" secondAttribute="leading" id="Ncf-dT-xqT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O2W-xx-dxO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 10" id="el1-Rc-OU4">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="C5l-R1-J0H">
+                            <connections>
+                                <segue destination="i2p-yt-lj4" kind="unwind" unwindAction="unwindFor:" id="HVp-DS-AUK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoD-iS-uNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="i2p-yt-lj4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="8245.6000000000004" y="1198.6506746626687"/>
+        </scene>
+        <!--Video2-->
+        <scene sceneID="euA-4N-IDr">
+            <objects>
+                <viewController id="246-QP-xfe" customClass="video2" customModule="Li_Yuing_ISU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRP-Qf-0e3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="i2z-uw-vc8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-hr-a43">
+                                <rect key="frame" x="105" y="79" width="155" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="25"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <segue destination="P3N-kx-fAC" kind="unwind" unwindAction="unwindFor:" id="ngr-hm-rig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x09-is-uCO">
+                                <rect key="frame" x="16" y="245" width="336" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="31"/>
+                                <state key="normal" title="Press there to watch speech">
+                                    <color key="titleColor" red="1" green="0.36452680719333752" blue="0.91497555597314895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="246-QP-xfe" eventType="touchUpInside" id="BDv-7G-bCB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please make notes about this speech and record it in self learning. ^_^" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D2-4a-H5L">
+                                <rect key="frame" x="44" y="467" width="297" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
+                                <color key="textColor" red="0.12073345684559289" green="0.10712905574672293" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i2z-uw-vc8" firstAttribute="leading" secondItem="01y-Th-JO0" secondAttribute="leading" id="mIl-ZA-MSI"/>
+                            <constraint firstItem="i2z-uw-vc8" firstAttribute="top" secondItem="xRP-Qf-0e3" secondAttribute="top" id="wIZ-1K-xw5"/>
+                            <constraint firstItem="i2z-uw-vc8" firstAttribute="trailing" secondItem="01y-Th-JO0" secondAttribute="trailing" id="wSF-ye-McM"/>
+                            <constraint firstItem="i2z-uw-vc8" firstAttribute="bottom" secondItem="01y-Th-JO0" secondAttribute="bottom" id="xeM-Bi-Zfs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="01y-Th-JO0"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="x09-is-uCO" id="x0a-05-qlu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gje-Ju-jFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="P3N-kx-fAC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8" y="950.37481259370327"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NX1-ZP-p06">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bfx-3y-87x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Lc-fi-g9Y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2mH-H4-sWh" kind="relationship" relationship="rootViewController" id="Iwk-VK-2OR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sh1-ON-gap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="1200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background3" width="225" height="225"/>
+        <image name="background4" width="225" height="225"/>
+        <image name="background5" width="189" height="267"/>
+        <image name="background6" width="259" height="194"/>
+        <image name="background8" width="192" height="262"/>
+    </resources>
+</document>
